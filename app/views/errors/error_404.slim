@@ -1,1 +1,10 @@
-| 404
+.erros__box
+  .erros__head
+  .erros__title
+    | NOT FOUND
+  .erros__body
+    | sorry, nothing is here.
+  .erros__links
+    = link_to root_path, class:'erros__link' do
+      = fa_icon 'home'
+      span back

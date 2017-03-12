@@ -1,0 +1,37 @@
+// media queris
+$pc-width:980px;
+@mixin SP {
+  @media screen and (max-width: $pc-width - 1) {
+    @content;
+  }
+}
+
+@mixin PC {
+  @media screen and (min-width: $pc-width) {
+    @content;
+  }
+}
+
+
+// Animation
+@mixin transition($element:all, $time:0.3, $easing:ease-in-out, $delay:0) {
+  transition: #{$element} #{$time}s #{$easing} #{$delay};
+  transition-property: #{$element};
+  transition-duration:#{$time}s;
+  transition-timing-function:#{$easing};
+  transition-delay:#{$delay}s;
+}
+
+@mixin animation( $name, $duration:1 , $function:ease, $delay:0, $count:1, $state:forwards){
+  -webkit-animation: $name $duration+s $function $delay+s $count $state;
+  animation: $name $duration+s $function $delay+s $count $state;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
