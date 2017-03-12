@@ -1,5 +1,5 @@
 class ErrorsController < ApplicationController
-  layout 'application'
+  layout 'application_errors'
 
   rescue_from ActiveRecord::RecordNotFound, with: :render_404
   rescue_from ActionController::RoutingError, with: :render_404
@@ -9,14 +9,14 @@ class ErrorsController < ApplicationController
     if exception
       logger.info "Rendering 404 with exception: #{exception.message}"
     end
-    render template: "errors/error_404", status: 404, layout: 'application'
+    render template: "errors/error_404", status: 404, layout: 'application_errors'
   end
 
   def render_500(exception = nil)
     if exception
       logger.info "Rendering 500 with exception: #{exception.message}"
     end
-    render template: "errors/error_500", status: 500, layout: 'application'
+    render template: "errors/error_500", status: 500, layout: 'application_errors'
   end
 
   def show

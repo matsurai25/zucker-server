@@ -1,0 +1,64 @@
+$head_height: 60px;
+
+.errors{
+  background-color: #333;
+  background-image: image-url('pattern3.svg');
+  background-size: 200px 120px;
+  background-repeat: repeat;
+
+  .erros__box{
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 400px;
+    padding: 40px;
+    padding-top: 40px + $head_height;
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    background-color: #FFF;
+    text-align: center;
+    color: $color-main1;
+  }
+
+  .erros__head{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: $head_height;
+    background-image: image-url('pattern1.svg');
+    background-size: 200px 120px;
+    background-repeat: repeat;
+  }
+
+  .erros__title{
+    letter-spacing: 4px;
+    font-family: 'effra', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .erros__body{
+    margin-top: 16px;
+    font-size: 16px;
+    color: $color-main3;
+  }
+
+  .erros__links{
+    margin-top: 16px;
+  }
+
+  .erros__link{
+    color: $color-subtext;
+    text-decoration: none;
+    @include transition(all, 0.1, $easeOutQuad);
+    span{
+      padding-left: 4px;
+    }
+    &:hover{
+      color: $color-main3;
+    }
+  }
+}
