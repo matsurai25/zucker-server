@@ -15,7 +15,7 @@ $pc-width:980px;
 
 // Animation
 @mixin transition($element:all, $time:0.3, $easing:ease-in-out, $delay:0) {
-  transition: #{$element} #{$time}s #{$easing} #{$delay};
+  transition: #{$element} #{$time}s #{$easing} #{$delay}s;
   transition-property: #{$element};
   transition-duration:#{$time}s;
   transition-timing-function:#{$easing};
