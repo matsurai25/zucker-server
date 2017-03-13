@@ -29,16 +29,12 @@
       }
       &.ja {
         @include ja{
-          color: $color-main3;
-          cursor: default;
-          background-color: #FFF;
+          display: none;
         };
       }
       &.en {
         @include en{
-          color: $color-main3;
-          cursor: default;
-          background-color: #FFF;
+          display: none;
         };
       }
     }
