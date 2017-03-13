@@ -9,7 +9,7 @@
     box-shadow: inset 0px 0px 8px rgba(0,0,0,0.2);
   }
   .landing__mvLogo{
-    height: 130px;
+    width: 700px;
     margin-top: 80px;
   }
   .landing__mvCopy{
@@ -53,6 +53,7 @@
     width: 200px;
   }
   .landing__aboutText{
+    width: 680px;
     padding-left: 40px;
     display: inline-block;
     vertical-align: top;
@@ -61,12 +62,18 @@
     line-height: 54px;
     font-size: 44px;
     color: $color-main3;
+    @include ja{
+      font-size: 32px;
+    };
   }
   .landing__aboutTextParagraph{
     margin-top: 12px;
     line-height: 40px;
     font-size: 20px;
     color: $color-subtext;
+    @include ja{
+      font-size: 16px;
+    };
   }
   .landing__features{
     background-color: #FCFCFC;
@@ -130,12 +137,19 @@
     margin-bottom: 12px;
     font-size: 30px;
     font-weight: 400;
-    color: $color-maintext;
+    color: $color-subtext;
+    @include ja{
+      font-size: 24px;
+    };
   }
   .landing__installListParagraph{
     line-height: 40px;
     font-size: 20px;
     color: $color-subtext;
+    @include ja{
+      line-height: 30px;
+      font-size: 14px;
+    };
     a{
       display: inline-block;
       position: relative;
@@ -197,7 +211,7 @@
     margin-bottom: 16px;
     font-size: 44px;
     font-weight: 400;
-    color: $color-main3;
+    color: $color-mutedtext;
   }
   .landing__scheduleList{
     display: flex;

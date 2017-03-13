@@ -12,6 +12,17 @@ $pc-width:980px;
   }
 }
 
+@mixin ja {
+  body.ja &{
+    @content;
+  }
+}
+
+@mixin en {
+  body.en &{
+    @content;
+  }
+}
 
 // Animation
 @mixin transition($element:all, $time:0.3, $easing:ease-in-out, $delay:0) {

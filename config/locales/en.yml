@@ -7,4 +7,52 @@ en:
 
   landing:
     index:
-      title: 'ZUCKER'
+      about_text_head: |
+        Shared Composition Vision
+        empower your composition.
+      about_text_paragraph: |
+        zucker is effective tool for empower your compotisions. Regardless of
+        your skills, zucker can provide your project a wonderful movement.
+      feature_easy_title: |
+        Easy to use
+      feature_easy_paragraph: |
+        To use shared compositions, just search on the AfterEffects panel and just click a few times. It is not necessary to know difficult operation of AE, so even beginners can easily create high quality movies.
+      feature_cgm_title: |
+        User Generated Compositions
+      feature_cgm_paragraph: |
+        Users in the world can post composition data to zucker. You will certainly find the composition you desire. If you can not find it, you can publish it to the world.
+      feature_update_title: |
+        No update required
+      feature_update_paragraph: |
+        Zucker is a WEB APPLICATION that drives in conjunction with AfterEffects. You do not need to update it every time a new version comes out like other plugins and scripts. You can always use the latest one.
+      feature_contribute_title: |
+        Can be useful for someone
+      feature_contribute_paragraph: |
+        By registering members easily, you will be able to publish your composition on the Internet. Your composition can be used all over the world.
+      feature_visible_title: |
+        Visualize contributions
+      feature_visible_paragraph: |
+        The number of compositions used and the number of evaluations obtained are visualized on the page. By sharing a composition, your skills can be evaluated from all over the world.
+      feature_learning_title: |
+        Learn from composition
+      feature_learning_paragraph: |
+        A lot of essence is put in the composition created by skilled users. You will be able to learn a lot through composition.
+
+      install_download_title: |
+        1. Download zucker.zxp file
+      install_zxpinstaller_title: |
+        2. Use the ZXP installer and install .zxp
+      install_zxpinstaller_paragraph: |
+        You can get ZXP installer from here.
+      install_allow_title: |
+        3. Turn on ‘Allow Network Access’.
+      install_allow_paragraph: |
+        If you don’t allow it, Edit > Preferences > General
+        and check on "Allow Scripts to Write Files and Access Network"
+
+      schedule_0324_title: Release zucker in beta version
+      schedule_0324_paragraph: you can test some simple features. (Please feedback me.)
+      schedule_0331_title: WEB interface open & zucker release.
+      schedule_0331_paragraph: Search composition in browser, and YOU CAN UPLOAD COMPOSITION.
+      schedule_0501_title: zucker Instant Scripts release (under development)
+      schedule_0501_paragraph: zucker IS make your scription familier. You don’t have to know .jsx

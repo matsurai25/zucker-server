@@ -7,4 +7,50 @@ ja:
 
   landing:
     index:
-      title: 'ZUCKER'
+      about_text_head: |
+        共有されたコンポジションを使えば、
+        あなたの映像はもっと魅力的に出来ます。
+      about_text_paragraph: |
+        zuckerは、あなたのコンポジションを大きく改善させることが可能なツールです。公開されているコンポジションを簡単にあなたのプロジェクトに組み込むことが出来ます。
+      feature_easy_title: |
+        簡単に利用できます
+      feature_easy_paragraph: |
+        共有されたコンポジションを利用するには、AfterEffectsのパネル上から検索して数クリックするだけです。細かいAEの操作を知っている必要はありませんので、初心者でも簡単にクオリティの高い動画を作成しやすくなります。
+      feature_cgm_title: |
+        ユーザー投稿型コンテンツ
+      feature_cgm_paragraph: |
+        zuckerには世界のユーザーがコンポジションデータを投稿できます。あなたが望むコンポジションもきっと見つかるでしょう。もし見つからないのならば、あなたが世界に公開すればよいのです。
+      feature_update_title: |
+        アップデートは不要
+      feature_update_paragraph: |
+        zuckerはAfterEffectsと連携して駆動するwebアプリケーションです。他のプラグインやスクリプトのように新しいバージョンが出るたびにアップデートする必要はありません。常に最新のものが使用できます。
+      feature_contribute_title: |
+        あなたが誰かの役に立つ
+      feature_contribute_paragraph: |
+        簡単な会員登録をすることで、あなたのコンポジションをインターネット上に公開できるようになります。あなたのコンポジションは世界中のAE上から利用することが出来ます。
+      feature_visible_title: |
+        スキルを可視化
+      feature_visible_paragraph: |
+        コンポジションの利用された数、得た評価の数はページ上で可視化されます。コンポジションを共有することによって、あなたのスキルは世界中から評価を得ることが出来ます。
+      feature_learning_title: |
+        コンポジションから学ぶ
+      feature_learning_paragraph: |
+        熟練のユーザーが作成したコンポジションには多くのエッセンスが込められています。あなたはコンポジションを通して多くのを事を学習できるでしょう。
+
+      install_download_title: |
+        1. zucker.zxp をダウンロードする
+      install_zxpinstaller_title: |
+        2. ZXP installerを使ってインストールする
+      install_zxpinstaller_paragraph: |
+        ZXP installerは下記のリンクからダウンロードすることが出来ます。
+      install_allow_title: |
+        3. スクリプトのネットワークアクセスを許可する
+      install_allow_paragraph: |
+        まだスクリプトのネットワーク許可をしていない場合、「環境設定」 -> 「一般設定」 -> 「スクリプトによるファイルへの書き込みとネットワークへのアクセスを許可」を有効にしてください。
+
+      schedule_0324_title: ベータ版リリース
+      schedule_0324_paragraph: 機能を限定した早期体験版をリリース予定です。フィードバックを貰えると嬉しく思います。
+      schedule_0331_title: WEBサイトオープン、正式版リリース
+      schedule_0331_paragraph: WEB上での検索が出来るようになるほか、ユーザー登録、コンポジションの登録が可能になります。
+      schedule_0501_title: zucker Instant Scripts リリース
+      schedule_0501_paragraph: zucker ISは、zuckerと同様にスクリプトを共有し実行する機能です。

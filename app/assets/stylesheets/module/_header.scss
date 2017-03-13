@@ -1,4 +1,5 @@
 .header{
+  position: relative;
   height: 60px;
   width: 100%;
   padding: 12px;
@@ -6,5 +7,40 @@
 
   .header__logo{
     height: 36px;
+  }
+
+  .header__selectLanguage{
+    position: absolute;
+    right: 12px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    .header__selectLanguageLink{
+      position: relative;
+      display: inline-block;
+      color: $color-mutedtext;
+      text-decoration: none;
+      padding: 4px 8px;
+      border-radius: 2px;
+      @include transition(all, 0.1);
+      &:hover{
+        background-color: $color-main3;
+        color: #FFF;
+      }
+      &.ja {
+        @include ja{
+          color: $color-main3;
+          cursor: default;
+          background-color: #FFF;
+        };
+      }
+      &.en {
+        @include en{
+          color: $color-main3;
+          cursor: default;
+          background-color: #FFF;
+        };
+      }
+    }
   }
 }

@@ -6,6 +6,10 @@ end
 .l-wrapper
   .l-header: .header
     = image_tag 'logo.svg', class: 'header__logo'
+    .header__selectLanguage
+      = link_to 'English', '/en/', class: 'header__selectLanguageLink en'
+      = link_to '日本語', '/ja/', class: 'header__selectLanguageLink ja'
+
   .landing
     .landing__mv
       = image_tag 'logo-white.svg', class: 'landing__mvLogo'
@@ -18,55 +22,62 @@ end
       = image_tag 'landing/figure-layers.svg', class: 'landing__aboutFigure'
       .landing__aboutText
         h2.landing__aboutTextHead
-          | Shared Composition Vision
-          br
-          | empower your composition.
-        p.landing__aboutTextParagraph
-          | zucker is effective tool for empower your compotisions. Regardless of 
-          br
-          | your skills, zucker can provide your project a wonderful movement.
+          = simple_format(t '.about_text_head')
+        .landing__aboutTextParagraph
+          = simple_format(t '.about_text_paragraph')
     .landing__features: .l-inner
       .landing__featuresBoxes
         .landing__featuresBox
-          .landing__featuresBoxTitle 手軽に利用
-          .landing__featuresBoxParagraph 共有されたコンポジションを利用するには、AfterEffectsのパネル上から検索して数クリックするだけで入手することが可能です。細かいAEの操作を知っている必要はありません。
+          .landing__featuresBoxTitle
+            = simple_format(t '.feature_easy_title')
+          .landing__featuresBoxParagraph
+            = simple_format(t '.feature_easy_paragraph')
         .landing__featuresBox
-          .landing__featuresBoxTitle 無数のコンポジション
-          .landing__featuresBoxParagraph zuckerには世界中からコンポジションのデータが集まります。あなたが望むコンポジションもきっと見つかります。もし見つからないのならば、あなたが世界に公開すればよいのです。
+          .landing__featuresBoxTitle
+            = simple_format(t '.feature_cgm_title')
+          .landing__featuresBoxParagraph
+            = simple_format(t '.feature_cgm_paragraph')
         .landing__featuresBox
-          .landing__featuresBoxTitle アップデート不要
-          .landing__featuresBoxParagraph zuckerはAfterEffectsと連携して駆動するwebアプリケーションです。他のプラグインやスクリプトのように新しいバージョンが出るたびにアップデートする必要はありません。常に最新のものが使用できます。
+          .landing__featuresBoxTitle
+            = simple_format(t '.feature_update_title')
+          .landing__featuresBoxParagraph
+            = simple_format(t '.feature_update_paragraph')
         .landing__featuresBox
-          .landing__featuresBoxTitle あなたが誰かの役に立つ
-          .landing__featuresBoxParagraph 簡単な会員登録をすることで、あなたのコンポジションをインターネット上に公開できるようになります。あなたのコンポジションは世界中のAE上から利用することが出来ます。
+          .landing__featuresBoxTitle
+            = simple_format(t '.feature_contribute_title')
+          .landing__featuresBoxParagraph
+            = simple_format(t '.feature_contribute_paragraph')
         .landing__featuresBox
-          .landing__featuresBoxTitle あなたのスキルを可視化
-          .landing__featuresBoxParagraph コンポジションの利用された数、得た評価の数はページ上で可視化されます。コンポジションを共有することによって、あなたは世界中から評価を得ることが出来ます。
+          .landing__featuresBoxTitle
+            = simple_format(t '.feature_visible_title')
+          .landing__featuresBoxParagraph
+            = simple_format(t '.feature_visible_paragraph')
         .landing__featuresBox
-          .landing__featuresBoxTitle 経験を補う
-          .landing__featuresBoxParagraph 熟練のユーザーが作成したコンポジションには多くのエッセンスが込められています。あなたはコンポジションを通して多くのを事を学習できるでしょう。
+          .landing__featuresBoxTitle
+            = simple_format(t '.feature_learning_title')
+          .landing__featuresBoxParagraph
+            = simple_format(t '.feature_learning_paragraph')
     .landing__install#install
       .landing__installFigure
-        | なんか図とか動かす
       .landing__installContent
         .landing__installHead
           | How to install
         .landing__installBody
           .landing__installList
-            .landing__installListHead 1. Download zucker.zxp file
+            .landing__installListHead
+              = simple_format(t '.install_download_title')
             = link_to 'download' ,'#', class:'landing__installListBtn'
           .landing__installList
-            .landing__installListHead 2. Use the ZXP installer and install .zxp
+            .landing__installListHead
+              = simple_format(t '.install_zxpinstaller_title')
             .landing__installListParagraph
-              | You can get ZXP installer from 
-              = link_to 'zxpinstaller.com', 'http://zxpinstaller.com/', target:'_blank'
-              | .
+              = simple_format(t '.install_zxpinstaller_paragraph')
+              = link_to 'http://zxpinstaller.com/', 'http://zxpinstaller.com/', target:'_blank'
           .landing__installList
-            .landing__installListHead 3. Turn on ‘Allow Network Access’.
+            .landing__installListHead
+              = simple_format(t '.install_allow_title')
             .landing__installListParagraph
-              | If you don’t allow it, Edit > Preferences > General 
-              br
-              | and check on "Allow Scripts to Write Files and Access Network" 
+              = simple_format(t '.install_allow_paragraph')
     .landing__schedule: .l-inner
       .landing__scheduleHead
         | To Be Developed
@@ -75,34 +86,36 @@ end
           | 2017/03/24
         .landing__scheduleListContent
           .landing__scheduleListHead
-            | ベータ版リリース
+            = t '.schedule_0324_title'
           .landing__scheduleListParagraph
-            | 機能を限定した早期体験版をリリース予定です。
+            = t '.schedule_0324_paragraph'
       .landing__scheduleList
         .landing__scheduleListDate
           | 2017/03/31
         .landing__scheduleListContent
           .landing__scheduleListHead
-            | WEBサイトオープン
+            = t '.schedule_0331_title'
           .landing__scheduleListParagraph
-            | ユーザー登録、コンポジションの登録が可能になります。
+            = t '.schedule_0331_paragraph'
       .landing__scheduleList
         .landing__scheduleListDate
           | 2017/05
         .landing__scheduleListContent
           .landing__scheduleListHead
-            | zucker Instant Scripts リリース
+            = t '.schedule_0501_title'
           .landing__scheduleListParagraph
-            | zucker IS make your scription familier. You don’t have to know .jsx
+            = t '.schedule_0501_paragraph'
+    .landing__snsBar
+      = render 'sns'
   .l-footer: .footer
     .footer__credit
       = image_tag 'logo.svg', class:'footer__creditLogo'
       br
-      = link_to '©matsurai', 'https://twitter.com/matsurai25', class:'footer__creditVender', target:'_blank'
+      = link_to '©matsurai', 'https://twitter.com/matsurai25', target:'_blank', class:'footer__creditVender'
       .footer__creditThanks
         .footer__creditThanksHead
           | thanks
         .footer__creditThanksList
           dt visial identify
           dd
-            = link_to 'Kaoru', 'https://twitter.com/matsurai25'
+            = link_to 'Kaoru', 'https://twitter.com/KmGraph', target:'_blank'
