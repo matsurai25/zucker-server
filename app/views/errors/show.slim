@@ -1,1 +1,14 @@
-| some error
+- content_for :title do
+  | #{@title} | #{SITE_TITLE}
+end
+
+.errors: .erros__box
+  .erros__head
+  .erros__title
+    = @title
+  .erros__body
+    = @body
+  .erros__links
+    = link_to root_path, class:'erros__link' do
+      = fa_icon 'home'
+      span back

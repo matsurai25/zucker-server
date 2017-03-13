@@ -1,6 +1,6 @@
 class LandingController < ActionController::Base
   before_action :set_locale
-  layout 'application_landings'
+  layout 'application'
 
   def index
   end
