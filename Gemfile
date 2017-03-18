@@ -34,6 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # opt: frontend
 gem 'slim-rails'
 gem 'font-awesome-rails'
+gem 'rollbar'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
